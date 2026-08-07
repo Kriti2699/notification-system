@@ -171,7 +171,7 @@ Tables
 
 - notification
 - email_template
-- email_log
+- emailstats
 
 ---
 
