@@ -45,7 +45,7 @@ public class NotificationService {
                 notificationId,
                 request.getChannel(),
                 request.getRecipient(),
-                request.getTemplateId(),
+                request.getTemplateCode(),
                 request.getData(),
                 LocalDateTime.now(),
                 0
@@ -58,7 +58,7 @@ public class NotificationService {
                 notification.setNotificationId(notificationId);
                 notification.setChannel(request.getChannel());
                 notification.setRecipient(request.getRecipient());
-                notification.setTemplateId(request.getTemplateId());
+                notification.setTemplateId(request.getTemplateCode());
                 notification.setStatus("QUEUED");
                 notification.setCreatedAt(LocalDateTime.now());
 

@@ -15,8 +15,9 @@ public class Notification {
     private String notificationId;
     private String channel;
     private String recipient;
-    private String templateId;
+    private String templateCode;
     private String status;
+
     private LocalDateTime createdAt;
 
 
@@ -45,11 +46,11 @@ public class Notification {
     }
 
     public String getTemplateId() {
-        return templateId;
+        return templateCode;
     }
 
     public void setTemplateId(String templateId) {
-        this.templateId = templateId;
+        this.templateCode = templateId;
     }
 
     public String getStatus() {

@@ -11,7 +11,7 @@ public class EmailTemplate {
 
     @Id
     private String tempId;
-    private String tempCode;
+    private String templateCode;
     private String subject;
     private String html_file;
     private String status;
@@ -25,12 +25,12 @@ public class EmailTemplate {
         this.tempId = tempId;
     }
 
-    public String getTempCode() {
-        return tempCode;
+    public String getTemplateCode() {
+        return templateCode;
     }
 
-    public void setTempCode(String tempCode) {
-        this.tempCode = tempCode;
+    public void setTemplateCode(String templateCode) {
+        this.templateCode = templateCode;
     }
 
     public String getSubject() {

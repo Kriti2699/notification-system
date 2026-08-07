@@ -14,7 +14,7 @@ public class NotificationEvent {
     private String notificationId;
     private String channel;
     private String recipient;
-    private String templateId;
+    private String templateCode;
     private Map<String, String> data;
     private LocalDateTime createdAt;
     private int retryCount;
@@ -43,12 +43,12 @@ public class NotificationEvent {
         this.recipient = recipient;
     }
 
-    public String getTemplateId() {
-        return templateId;
+    public String getTemplateCode() {
+        return templateCode;
     }
 
-    public void setTemplateId(String templateId) {
-        this.templateId = templateId;
+    public void setTemplateCode(String templateCode) {
+        this.templateCode = templateCode;
     }
 
     public Map<String, String> getData() {
@@ -74,4 +74,6 @@ public class NotificationEvent {
     public void setRetryCount(int retryCount) {
         this.retryCount = retryCount;
     }
+
+
 }

@@ -9,6 +9,6 @@ public class NotificationRequest {
 
     private String channel;        // email, sms, push
     private String recipient;      // email address or phone number
-    private String templateId;     // which template to use
+    private String templateCode;     // which template to use
     private Map<String, String> data;  // template variables
 }

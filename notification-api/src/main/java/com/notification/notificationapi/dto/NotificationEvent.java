@@ -14,7 +14,7 @@ public class NotificationEvent {
     private String notificationId;
     private String channel;
     private String recipient;
-    private String templateId;
+    private String templateCode;
     private Map<String, String> data;
     private LocalDateTime createdAt;
     private int retryCount;
