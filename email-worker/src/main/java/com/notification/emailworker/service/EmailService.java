@@ -4,8 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.notification.emailworker.dto.NotificationEvent;
 import com.notification.emailworker.dto.StatusUpdateRequest;
+import com.notification.emailworker.entity.EmailLog;
 import com.notification.emailworker.entity.EmailTemplate;
 import com.notification.emailworker.repository.EmailRepository;
+import com.notification.emailworker.repository.EmailStatsRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -29,12 +31,15 @@ public class EmailService {
     private final RestTemplate restTemplate;
     private final JavaMailSender mailSender;
     private final EmailRepository emailRepository;
+    private final EmailStatsRepository emailStatsRepository;
 
     @Value("${notification.api.url}")
     private String notificationApiUrl;
 
     public void sendEmail(NotificationEvent event) {
 
+        int failstatus=1;
+        String failureReason="";
         try {
             log.info("Looking up templateCode: [{}]", event.getTemplateCode());
             // Step 1: Get template from database
@@ -43,21 +48,17 @@ public class EmailService {
             // Step 2: Read HTML file
             ClassPathResource resource = new ClassPathResource("templates/" + template.getHtml_file());
 
-
             String body = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
-
             // Step 3: Extract specific values from data map
             Map<String, String> data = event.getData();
-
             String name = data.get("name");
             String password = data.get("password");
             String companyName = data.get("companyName");
 
             log.info("Parsed data -> name: {}, companyName: {}", name, companyName);
-// avoid logging password in plaintext in production
+            // avoid logging password in plaintext in production
 
-// Step 4: Replace placeholders in the HTML body
-//            body = body.replace("{{name}}", name != null ? name : "");
+            // Step 4: Replace placeholders in the HTML body
             body = body.replace("{{password}}", password != null ? password : "");
             body = body.replace("{{companyName}}", companyName != null ? companyName : "");
 
@@ -97,7 +98,21 @@ public class EmailService {
             }
 
             log.error("Email sending failed", ex);
+            failstatus = 0;
+            failureReason = ex.getMessage();
         }
+        EmailLog emailLog = new EmailLog();
+        emailLog.setId(UUID.randomUUID().toString());
+        emailLog.setToEmail(event.getRecipient());
+        emailLog.setFailurereason(failureReason);
+        emailLog.setTemplaesend(event.getTemplateCode());
+        emailLog.setStatus(failstatus);
+        emailLog.setCreatedAt(LocalDateTime.now());
+
+        emailStatsRepository.save(emailLog);
+
+
+
     }
 
     public void populateEmailData(EmailTemplate emailTemplate) {
