@@ -294,3 +294,15 @@
 2026-08-07 07:28:52.044  INFO 21720 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Saved successfully
 2026-08-07 07:28:52.044  INFO 21720 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification queued: 657b0a12-9182-4b35-9e54-d23d64ed42af for channel: email
 2026-08-07 07:28:57.947  INFO 21720 --- [http-nio-8081-exec-8] c.n.n.service.NotificationService        : Notification 657b0a12-9182-4b35-9e54-d23d64ed42af updated to SENT
+2026-08-07 08:50:57.256  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m45s542ms427µs300ns).
+2026-08-07 08:50:58.103  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node 1 disconnected.
+2026-08-07 09:03:57.666  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m231ms230µs700ns).
+2026-08-07 09:40:00.663  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m24s36ms364µs700ns).
+2026-08-07 09:53:22.410  INFO 21720 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-08-07 09:53:22.419  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2026-08-07 09:53:22.420  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-08-07 09:53:22.420  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2026-08-07 09:53:22.421  INFO 21720 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2026-08-07 09:53:22.423  INFO 21720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-07 09:53:22.441  INFO 21720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-07 09:53:22.450  INFO 21720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

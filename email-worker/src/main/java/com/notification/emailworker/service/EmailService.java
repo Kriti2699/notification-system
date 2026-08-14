@@ -111,8 +111,6 @@ public class EmailService {
 
         emailStatsRepository.save(emailLog);
 
-
-
     }
 
     public void populateEmailData(EmailTemplate emailTemplate) {
