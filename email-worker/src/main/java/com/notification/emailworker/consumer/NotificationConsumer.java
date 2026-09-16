@@ -23,6 +23,11 @@ public class NotificationConsumer {
         log.info("Received notification {}",
                 event.getNotificationId());
 
+        if (!"email".equalsIgnoreCase(event.getChannel())) {
+            System.out.println("Skipping non-email notification: " + event.getChannel());
+            return;
+        }
+
         emailService.sendEmail(event);
     }
 }

@@ -1,53 +1,53 @@
-2026-08-07 06:19:24.430  INFO 31588 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 31588 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
-2026-08-07 06:19:24.449  INFO 31588 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-08-07 06:19:27.524  INFO 31588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-07 06:19:28.047  INFO 31588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 501 ms. Found 1 JPA repository interfaces.
-2026-08-07 06:19:30.157  INFO 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2026-08-07 06:19:30.178  INFO 31588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-07 06:19:30.179  INFO 31588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-2026-08-07 06:19:30.485  INFO 31588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-08-07 06:19:30.485  INFO 31588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5519 ms
-2026-08-07 06:19:31.233  INFO 31588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-08-07 06:19:31.371  INFO 31588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-08-07 06:19:31.877  INFO 31588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-08-07 06:19:32.178  INFO 31588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-07 06:19:33.059  INFO 31588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-07 06:19:33.231  INFO 31588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2026-08-07 06:19:34.770  INFO 31588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2026-08-07 06:19:34.791  INFO 31588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 06:19:35.514  WARN 31588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-07 06:19:36.645  INFO 31588 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-08-07 06:19:36.743  INFO 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2026-08-07 06:19:36.769  INFO 31588 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 13.148 seconds (JVM running for 20.848)
-2026-08-07 06:26:23.882  INFO 31588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 06:26:23.892  INFO 31588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-07 06:26:23.897  INFO 31588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-07 06:26:33.244  INFO 31672 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 31672 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
-2026-08-07 06:26:33.248  INFO 31672 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-08-07 06:26:34.110  INFO 31672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-07 06:26:34.165  INFO 31672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
-2026-08-07 06:26:34.801  INFO 31672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2026-08-07 06:26:34.823  INFO 31672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-07 06:26:34.824  INFO 31672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-2026-08-07 06:26:34.935  INFO 31672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-08-07 06:26:34.936  INFO 31672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1618 ms
-2026-08-07 06:26:35.354  INFO 31672 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-08-07 06:26:35.460  INFO 31672 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-08-07 06:26:35.869  INFO 31672 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-08-07 06:26:36.139  INFO 31672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-07 06:26:36.670  INFO 31672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-07 06:26:36.728  INFO 31672 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2026-08-07 06:26:38.574  INFO 31672 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2026-08-07 06:26:38.596  INFO 31672 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 06:26:39.339  WARN 31672 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-07 06:26:40.355  INFO 31672 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-08-07 06:26:40.443  INFO 31672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2026-08-07 06:26:40.465  INFO 31672 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 7.762 seconds (JVM running for 8.335)
-2026-08-07 06:27:25.881  INFO 31672 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-07 06:27:25.882  INFO 31672 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-07 06:27:25.884  INFO 31672 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-08-07 06:27:26.022  INFO 31672 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: email
-2026-08-07 06:27:26.051  INFO 31672 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2026-09-16 09:24:30.726  INFO 3488 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 3488 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
+2026-09-16 09:24:30.739  INFO 3488 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-09-16 09:24:32.119  INFO 3488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 09:24:32.174  INFO 3488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2026-09-16 09:24:32.958  INFO 3488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-09-16 09:24:32.969  INFO 3488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-16 09:24:32.970  INFO 3488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-09-16 09:24:33.105  INFO 3488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-16 09:24:33.106  INFO 3488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2283 ms
+2026-09-16 09:24:33.552  INFO 3488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 09:24:33.690  INFO 3488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-09-16 09:24:34.306  INFO 3488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-09-16 09:24:34.538  INFO 3488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-16 09:24:34.981  INFO 3488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-16 09:24:35.006  INFO 3488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-09-16 09:24:35.878  INFO 3488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-09-16 09:24:35.899  INFO 3488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 09:24:36.297  WARN 3488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 09:24:36.851  INFO 3488 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-09-16 09:24:36.897  INFO 3488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-09-16 09:24:36.908  INFO 3488 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 6.774 seconds (JVM running for 8.323)
+2026-09-16 09:57:23.251  INFO 3488 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 09:57:23.254  INFO 3488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-16 09:57:23.261  INFO 3488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-16 09:57:25.652  INFO 16812 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 16812 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
+2026-09-16 09:57:25.656  INFO 16812 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-09-16 09:57:26.640  INFO 16812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 09:57:26.684  INFO 16812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2026-09-16 09:57:27.248  INFO 16812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-09-16 09:57:27.261  INFO 16812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-16 09:57:27.261  INFO 16812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-09-16 09:57:27.365  INFO 16812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-16 09:57:27.365  INFO 16812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1606 ms
+2026-09-16 09:57:27.715  INFO 16812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 09:57:27.775  INFO 16812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-09-16 09:57:27.977  INFO 16812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-09-16 09:57:28.077  INFO 16812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-16 09:57:28.234  INFO 16812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-16 09:57:28.259  INFO 16812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-09-16 09:57:28.849  INFO 16812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-09-16 09:57:28.861  INFO 16812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 09:57:29.126  WARN 16812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 09:57:29.504  INFO 16812 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-09-16 09:57:29.542  INFO 16812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-09-16 09:57:29.553  INFO 16812 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 4.368 seconds (JVM running for 4.892)
+2026-09-16 09:57:51.301  INFO 16812 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-16 09:57:51.301  INFO 16812 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-16 09:57:51.303  INFO 16812 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-16 10:02:03.667  INFO 16812 --- [http-nio-8081-exec-6] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:02:03.708  INFO 16812 --- [http-nio-8081-exec-6] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	batch.size = 16384
 	bootstrap.servers = [localhost:9092]
@@ -133,57 +133,89 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2026-08-07 06:27:26.107  INFO 31672 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-08-07 06:27:26.179  INFO 31672 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
-2026-08-07 06:27:26.180  INFO 31672 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
-2026-08-07 06:27:26.180  INFO 31672 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1786084046177
-2026-08-07 06:27:26.744  INFO 31672 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to 1EGVJgaxR6mU1u-hvr_ChQ
-2026-08-07 06:27:26.756  INFO 31672 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: icb0BPXCTu6vIOY6OWoMsw
-2026-08-07 06:27:26.802  INFO 31672 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2026-08-07 06:27:26.893  INFO 31672 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 0cec1f24-74ab-4a49-b6e2-386deb6e9769
-2026-08-07 06:27:26.991  INFO 31672 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
-2026-08-07 06:27:26.992  INFO 31672 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: 0cec1f24-74ab-4a49-b6e2-386deb6e9769 for channel: email
-2026-08-07 06:27:32.859  INFO 31672 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification 0cec1f24-74ab-4a49-b6e2-386deb6e9769 updated to SENT
-2026-08-07 06:28:11.150  INFO 31672 --- [http-nio-8081-exec-4] c.n.n.controller.NotificationController  : Received notification request for channel: email
-2026-08-07 06:28:11.170  INFO 31672 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: fabbf4ee-1e1c-4792-bc3d-d42b82d868d9
-2026-08-07 06:28:11.180  INFO 31672 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Saved successfully
-2026-08-07 06:28:11.182  INFO 31672 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification queued: fabbf4ee-1e1c-4792-bc3d-d42b82d868d9 for channel: email
-2026-08-07 06:28:17.114  INFO 31672 --- [http-nio-8081-exec-5] c.n.n.service.NotificationService        : Notification fabbf4ee-1e1c-4792-bc3d-d42b82d868d9 updated to SENT
-2026-08-07 06:36:26.828  INFO 31672 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-08-07 06:53:59.361  INFO 31672 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-08-07 06:53:59.369  INFO 31672 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-2026-08-07 06:53:59.370  INFO 31672 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-08-07 06:53:59.371  INFO 31672 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-2026-08-07 06:53:59.372  INFO 31672 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-08-07 06:53:59.373  INFO 31672 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 06:53:59.378  INFO 31672 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-07 06:53:59.391  INFO 31672 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-08-07 06:54:03.574  INFO 21720 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 21720 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
-2026-08-07 06:54:03.578  INFO 21720 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-08-07 06:54:04.404  INFO 21720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-08-07 06:54:04.440  INFO 21720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
-2026-08-07 06:54:04.966  INFO 21720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2026-08-07 06:54:04.976  INFO 21720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-07 06:54:04.976  INFO 21720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-2026-08-07 06:54:05.078  INFO 21720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-08-07 06:54:05.079  INFO 21720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1442 ms
-2026-08-07 06:54:05.347  INFO 21720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-08-07 06:54:05.420  INFO 21720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2026-08-07 06:54:05.669  INFO 21720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2026-08-07 06:54:05.827  INFO 21720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-07 06:54:06.030  INFO 21720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-07 06:54:06.063  INFO 21720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2026-08-07 06:54:07.024  INFO 21720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2026-08-07 06:54:07.037  INFO 21720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 06:54:07.344  WARN 21720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-08-07 06:54:07.809  INFO 21720 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-08-07 06:54:07.854  INFO 21720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2026-08-07 06:54:07.868  INFO 21720 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 4.742 seconds (JVM running for 5.229)
-2026-08-07 06:58:36.624  INFO 21720 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-07 06:58:36.626  INFO 21720 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-07 06:58:36.639  INFO 21720 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2026-08-07 06:58:36.879  INFO 21720 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: email
-2026-08-07 06:58:36.911  INFO 21720 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2026-09-16 10:02:03.777  INFO 16812 --- [http-nio-8081-exec-6] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2026-09-16 10:02:03.904  INFO 16812 --- [http-nio-8081-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2026-09-16 10:02:03.904  INFO 16812 --- [http-nio-8081-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2026-09-16 10:02:03.904  INFO 16812 --- [http-nio-8081-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1789552923901
+2026-09-16 10:02:04.422  INFO 16812 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to MD9MVrpTQ46HBMgXltkpyw
+2026-09-16 10:02:04.425  INFO 16812 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IpSFwVqNTf69Rf6y-vD8Zg
+2026-09-16 10:02:04.518  INFO 16812 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2026-09-16 10:02:04.586  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 9b582fdf-7394-44e6-b87d-b844dd2fc5d5
+2026-09-16 10:02:04.595  INFO 16812 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:02:04.595  INFO 16812 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification queued: 9b582fdf-7394-44e6-b87d-b844dd2fc5d5 for channel: email
+2026-09-16 10:02:05.015  INFO 16812 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Notification 9b582fdf-7394-44e6-b87d-b844dd2fc5d5 updated to FAILED
+2026-09-16 10:02:05.037  INFO 16812 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Notification 9b582fdf-7394-44e6-b87d-b844dd2fc5d5 updated to FAILED
+2026-09-16 10:02:22.967  INFO 16812 --- [http-nio-8081-exec-8] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:02:22.985  INFO 16812 --- [http-nio-8081-exec-8] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:02:22.986  INFO 16812 --- [http-nio-8081-exec-8] c.n.n.service.NotificationService        : Notification queued: 1ad5da2f-d085-4e26-920d-e1a4870d24b3 for channel: email
+2026-09-16 10:02:22.991  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 1ad5da2f-d085-4e26-920d-e1a4870d24b3
+2026-09-16 10:02:23.014  INFO 16812 --- [http-nio-8081-exec-10] c.n.n.service.NotificationService        : Notification 1ad5da2f-d085-4e26-920d-e1a4870d24b3 updated to FAILED
+2026-09-16 10:02:23.017  INFO 16812 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Notification 1ad5da2f-d085-4e26-920d-e1a4870d24b3 updated to FAILED
+2026-09-16 10:03:04.989  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:03:05.010  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: d8face89-fcdd-4c3f-9c66-06be9b4fc4f4
+2026-09-16 10:03:05.048  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:03:05.049  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: d8face89-fcdd-4c3f-9c66-06be9b4fc4f4 for channel: sms
+2026-09-16 10:03:05.066  INFO 16812 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification d8face89-fcdd-4c3f-9c66-06be9b4fc4f4 updated to FAILED
+2026-09-16 10:03:05.070  INFO 16812 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification d8face89-fcdd-4c3f-9c66-06be9b4fc4f4 updated to FAILED
+2026-09-16 10:03:39.828  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:03:39.850  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 86623ff3-6878-4584-a079-c2f58bbd504a
+2026-09-16 10:03:39.882  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:03:39.882  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.service.NotificationService        : Notification queued: 86623ff3-6878-4584-a079-c2f58bbd504a for channel: sms
+2026-09-16 10:03:39.896  INFO 16812 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Notification 86623ff3-6878-4584-a079-c2f58bbd504a updated to FAILED
+2026-09-16 10:03:39.899  INFO 16812 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification 86623ff3-6878-4584-a079-c2f58bbd504a updated to FAILED
+2026-09-16 10:06:15.111  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:06:15.124  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 48478552-baaa-4b9c-b069-6cd41bb75cca
+2026-09-16 10:06:15.139  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:06:15.140  INFO 16812 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: 48478552-baaa-4b9c-b069-6cd41bb75cca for channel: email
+2026-09-16 10:06:15.175  INFO 16812 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification 48478552-baaa-4b9c-b069-6cd41bb75cca updated to FAILED
+2026-09-16 10:06:23.527  INFO 16812 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification 48478552-baaa-4b9c-b069-6cd41bb75cca updated to SENT
+2026-09-16 10:06:48.934  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:06:48.947  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 05d863b3-e627-4a93-9a81-1168f6d568c6
+2026-09-16 10:06:48.981  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:06:48.981  INFO 16812 --- [http-nio-8081-exec-5] c.n.n.service.NotificationService        : Notification queued: 05d863b3-e627-4a93-9a81-1168f6d568c6 for channel: sms
+2026-09-16 10:06:48.996  INFO 16812 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Notification 05d863b3-e627-4a93-9a81-1168f6d568c6 updated to FAILED
+2026-09-16 10:06:49.007  INFO 16812 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification 05d863b3-e627-4a93-9a81-1168f6d568c6 updated to FAILED
+2026-09-16 10:09:26.716  INFO 16812 --- [http-nio-8081-exec-2] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:09:26.728  INFO 16812 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 7501bc9b-86ff-4424-b708-29a7bec79620
+2026-09-16 10:09:26.741  INFO 16812 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:09:26.741  INFO 16812 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Notification queued: 7501bc9b-86ff-4424-b708-29a7bec79620 for channel: email
+2026-09-16 10:09:26.760  INFO 16812 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification 7501bc9b-86ff-4424-b708-29a7bec79620 updated to FAILED
+2026-09-16 10:09:32.613  INFO 16812 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification 7501bc9b-86ff-4424-b708-29a7bec79620 updated to SENT
+2026-09-16 10:11:26.773  INFO 16812 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2026-09-16 10:14:08.905  INFO 16812 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-09-16 10:14:08.913  INFO 16812 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2026-09-16 10:14:08.914  INFO 16812 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-16 10:14:08.914  INFO 16812 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2026-09-16 10:14:08.914  INFO 16812 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2026-09-16 10:14:08.917  INFO 16812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 10:14:08.922  INFO 16812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-16 10:14:08.929  INFO 16812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-16 10:14:16.588  INFO 14016 --- [main] c.n.n.NotificationApiApplication         : Starting NotificationApiApplication using Java 21.0.10 on KritiS-LAP with PID 14016 (D:\Spring-Pro\MicroServiceProjects\notification-system\notification-api\target\classes started by kriti in D:\Spring-Pro\MicroServiceProjects\notification-system)
+2026-09-16 10:14:16.593  INFO 14016 --- [main] c.n.n.NotificationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-09-16 10:14:17.583  INFO 14016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 10:14:17.622  INFO 14016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2026-09-16 10:14:18.164  INFO 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-09-16 10:14:18.183  INFO 14016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-16 10:14:18.184  INFO 14016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-09-16 10:14:18.354  INFO 14016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-16 10:14:18.354  INFO 14016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1710 ms
+2026-09-16 10:14:18.633  INFO 14016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 10:14:18.670  INFO 14016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-09-16 10:14:18.792  INFO 14016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-09-16 10:14:18.864  INFO 14016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-16 10:14:18.984  INFO 14016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-16 10:14:18.996  INFO 14016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-09-16 10:14:19.451  INFO 14016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-09-16 10:14:19.458  INFO 14016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 10:14:19.723  WARN 14016 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 10:14:20.068  INFO 14016 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-09-16 10:14:20.112  INFO 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-09-16 10:14:20.120  INFO 14016 --- [main] c.n.n.NotificationApiApplication         : Started NotificationApiApplication in 3.916 seconds (JVM running for 4.355)
+2026-09-16 10:14:41.749  INFO 14016 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-16 10:14:41.750  INFO 14016 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-16 10:14:41.751  INFO 14016 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-16 10:14:41.895  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:14:41.938  INFO 14016 --- [http-nio-8081-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	batch.size = 16384
 	bootstrap.servers = [localhost:9092]
@@ -269,40 +301,40 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2026-08-07 06:58:36.962  INFO 21720 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-08-07 06:58:37.044  INFO 21720 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
-2026-08-07 06:58:37.044  INFO 21720 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
-2026-08-07 06:58:37.044  INFO 21720 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1786085917042
-2026-08-07 06:58:37.589  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to 1EGVJgaxR6mU1u-hvr_ChQ
-2026-08-07 06:58:37.594  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: icb0BPXCTu6vIOY6OWoMsw
-2026-08-07 06:58:37.597  INFO 21720 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
-2026-08-07 06:58:37.726  INFO 21720 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: c9070666-1651-4776-bf7f-683463a9c4ef
-2026-08-07 06:58:37.835  INFO 21720 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
-2026-08-07 06:58:37.835  INFO 21720 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: c9070666-1651-4776-bf7f-683463a9c4ef for channel: email
-2026-08-07 06:58:44.738  INFO 21720 --- [http-nio-8081-exec-8] c.n.n.service.NotificationService        : Notification c9070666-1651-4776-bf7f-683463a9c4ef updated to SENT
-2026-08-07 07:17:10.915  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m34s619ms751µs300ns).
-2026-08-07 07:17:12.239  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-08-07 07:17:12.344  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node 1 disconnected.
-2026-08-07 07:27:28.461  INFO 21720 --- [http-nio-8081-exec-7] c.n.n.controller.NotificationController  : Received notification request for channel: email
-2026-08-07 07:27:28.470  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to 1EGVJgaxR6mU1u-hvr_ChQ
-2026-08-07 07:27:28.482  INFO 21720 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: a1329c9d-ef83-41f7-b78d-3694b73540ba
-2026-08-07 07:27:28.503  INFO 21720 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Saved successfully
-2026-08-07 07:27:28.504  INFO 21720 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Notification queued: a1329c9d-ef83-41f7-b78d-3694b73540ba for channel: email
-2026-08-07 07:27:34.603  INFO 21720 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification a1329c9d-ef83-41f7-b78d-3694b73540ba updated to SENT
-2026-08-07 07:28:52.014  INFO 21720 --- [http-nio-8081-exec-4] c.n.n.controller.NotificationController  : Received notification request for channel: email
-2026-08-07 07:28:52.028  INFO 21720 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 657b0a12-9182-4b35-9e54-d23d64ed42af
-2026-08-07 07:28:52.044  INFO 21720 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Saved successfully
-2026-08-07 07:28:52.044  INFO 21720 --- [http-nio-8081-exec-4] c.n.n.service.NotificationService        : Notification queued: 657b0a12-9182-4b35-9e54-d23d64ed42af for channel: email
-2026-08-07 07:28:57.947  INFO 21720 --- [http-nio-8081-exec-8] c.n.n.service.NotificationService        : Notification 657b0a12-9182-4b35-9e54-d23d64ed42af updated to SENT
-2026-08-07 08:50:57.256  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m45s542ms427µs300ns).
-2026-08-07 08:50:58.103  INFO 21720 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node 1 disconnected.
-2026-08-07 09:03:57.666  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m231ms230µs700ns).
-2026-08-07 09:40:00.663  WARN 21720 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m24s36ms364µs700ns).
-2026-08-07 09:53:22.410  INFO 21720 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-08-07 09:53:22.419  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-2026-08-07 09:53:22.420  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-08-07 09:53:22.420  INFO 21720 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-2026-08-07 09:53:22.421  INFO 21720 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-08-07 09:53:22.423  INFO 21720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-08-07 09:53:22.441  INFO 21720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-08-07 09:53:22.450  INFO 21720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-16 10:14:42.014  INFO 14016 --- [http-nio-8081-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2026-09-16 10:14:42.093  INFO 14016 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2026-09-16 10:14:42.093  INFO 14016 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2026-09-16 10:14:42.093  INFO 14016 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1789553682089
+2026-09-16 10:14:42.735  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to MD9MVrpTQ46HBMgXltkpyw
+2026-09-16 10:14:42.738  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IpSFwVqNTf69Rf6y-vD8Zg
+2026-09-16 10:14:42.741  INFO 14016 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
+2026-09-16 10:14:42.824  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 750070b8-d460-4fc0-a6d5-d32be956f930
+2026-09-16 10:14:42.910  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:14:42.911  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Notification queued: 750070b8-d460-4fc0-a6d5-d32be956f930 for channel: email
+2026-09-16 10:14:49.033  INFO 14016 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification 750070b8-d460-4fc0-a6d5-d32be956f930 updated to SENT
+2026-09-16 10:16:12.522  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:16:12.540  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 29a23bf7-4988-44a2-82f0-4ef8cc58fec7
+2026-09-16 10:16:12.562  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:16:12.563  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Notification queued: 29a23bf7-4988-44a2-82f0-4ef8cc58fec7 for channel: email
+2026-09-16 10:16:18.362  INFO 14016 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification 29a23bf7-4988-44a2-82f0-4ef8cc58fec7 updated to SENT
+2026-09-16 10:19:43.983  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.controller.NotificationController  : Received notification request for channel: email
+2026-09-16 10:19:43.990  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: a7438a14-0c41-4ead-8d01-f015d155257f
+2026-09-16 10:19:44.003  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:19:44.004  INFO 14016 --- [http-nio-8081-exec-2] c.n.n.service.NotificationService        : Notification queued: a7438a14-0c41-4ead-8d01-f015d155257f for channel: email
+2026-09-16 10:19:49.622  INFO 14016 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification a7438a14-0c41-4ead-8d01-f015d155257f updated to SENT
+2026-09-16 10:20:47.572  INFO 14016 --- [http-nio-8081-exec-7] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:20:47.586  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 1172aff2-6c2b-482f-919b-34816ae494c6
+2026-09-16 10:20:47.595  INFO 14016 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:20:47.596  INFO 14016 --- [http-nio-8081-exec-7] c.n.n.service.NotificationService        : Notification queued: 1172aff2-6c2b-482f-919b-34816ae494c6 for channel: sms
+2026-09-16 10:20:47.877  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Notification 1172aff2-6c2b-482f-919b-34816ae494c6 updated to FAILED
+2026-09-16 10:23:16.753  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:23:16.763  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 3d623ea4-1c3e-4192-89b8-222d4cd66110
+2026-09-16 10:23:16.802  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:23:16.803  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: 3d623ea4-1c3e-4192-89b8-222d4cd66110 for channel: sms
+2026-09-16 10:23:18.316  INFO 14016 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification 3d623ea4-1c3e-4192-89b8-222d4cd66110 updated to SENT
+2026-09-16 10:23:46.771  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2026-09-16 10:26:22.767  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 10:26:22.780  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: 93ed23cf-e710-47fd-ae45-d5a7cea08a79
+2026-09-16 10:26:22.804  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 10:26:22.804  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Notification queued: 93ed23cf-e710-47fd-ae45-d5a7cea08a79 for channel: sms
+2026-09-16 10:26:23.882  INFO 14016 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification 93ed23cf-e710-47fd-ae45-d5a7cea08a79 updated to SENT

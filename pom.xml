@@ -12,10 +12,10 @@
 
     <modules>
         <module>notification-api</module>
-<!--        <module>template-service</module>-->
+        <!--        <module>template-service</module>-->
         <module>email-worker</module>
-<!--        <module>sms-worker</module>-->
-<!--        <module>delivery-tracker</module>-->
+        <module>sms-workers</module>
+        <!--        <module>delivery-tracker</module>-->
     </modules>
 
     <properties>
@@ -37,5 +37,11 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

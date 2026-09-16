@@ -5,6 +5,11 @@
     <file url="file://$PROJECT_DIR$/email-worker/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sms-worker/sms-worker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sms-worker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sms-worker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sms-workers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sms-workers/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
