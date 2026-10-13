@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
@@ -145,31 +147,19 @@ public class SmsService {
             String message) {
 
         HttpHeaders headers = new HttpHeaders();
-
         headers.setContentType(
-                MediaType.APPLICATION_JSON
+                MediaType.APPLICATION_FORM_URLENCODED
         );
 
-        headers.set(
-                "Authorization",
-                "Bearer " + apiKey
-        );
+        MultiValueMap<String, String> body =
+                new LinkedMultiValueMap<>();
 
-        String requestBody = """
-                {
-                    "to": "%s",
-                    "message": "%s"
-                }
-                """.formatted(
-                phoneNumber,
-                message
-        );
+        body.add("phone", phoneNumber);
+        body.add("message", message);
+        body.add("key", apiKey);
 
-        HttpEntity<String> request =
-                new HttpEntity<>(
-                        requestBody,
-                        headers
-                );
+        HttpEntity<MultiValueMap<String, String>> request =
+                new HttpEntity<>(body, headers);
 
         ResponseEntity<String> response =
                 restTemplate.exchange(
@@ -179,12 +169,29 @@ public class SmsService {
                         String.class
                 );
 
-        if (!response.getStatusCode()
-                .is2xxSuccessful()) {
+        System.out.println(
+                "Textbelt HTTP Status: "
+                        + response.getStatusCode()
+        );
 
+        System.out.println(
+                "Textbelt Response: "
+                        + response.getBody()
+        );
+
+        if (!response.getStatusCode().is2xxSuccessful()) {
             throw new RuntimeException(
                     "SMS provider failed: "
                             + response.getStatusCode()
+            );
+        }
+
+        if (response.getBody() == null ||
+                !response.getBody().contains("\"success\":true")) {
+
+            throw new RuntimeException(
+                    "Textbelt rejected SMS: "
+                            + response.getBody()
             );
         }
     }

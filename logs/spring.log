@@ -338,3 +338,19 @@
 2026-09-16 10:26:22.804  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Saved successfully
 2026-09-16 10:26:22.804  INFO 14016 --- [http-nio-8081-exec-9] c.n.n.service.NotificationService        : Notification queued: 93ed23cf-e710-47fd-ae45-d5a7cea08a79 for channel: sms
 2026-09-16 10:26:23.882  INFO 14016 --- [http-nio-8081-exec-6] c.n.n.service.NotificationService        : Notification 93ed23cf-e710-47fd-ae45-d5a7cea08a79 updated to SENT
+2026-09-16 11:06:21.458  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.controller.NotificationController  : Received notification request for channel: sms
+2026-09-16 11:06:21.485  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition notifications.pending-0 to 0 since the associated topicId changed from null to MD9MVrpTQ46HBMgXltkpyw
+2026-09-16 11:06:21.679  INFO 14016 --- [kafka-producer-network-thread | producer-1] c.n.n.producer.NotificationProducer      : Event sent to Kafka: f582cb55-651b-4dae-aef7-7de26ffe1818
+2026-09-16 11:06:21.773  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Saved successfully
+2026-09-16 11:06:21.773  INFO 14016 --- [http-nio-8081-exec-1] c.n.n.service.NotificationService        : Notification queued: f582cb55-651b-4dae-aef7-7de26ffe1818 for channel: sms
+2026-09-16 11:06:23.725  INFO 14016 --- [http-nio-8081-exec-3] c.n.n.service.NotificationService        : Notification f582cb55-651b-4dae-aef7-7de26ffe1818 updated to FAILED
+2026-09-16 12:26:30.478  INFO 14016 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node 1 disconnected.
+2026-09-16 12:26:37.297  WARN 14016 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m13s345ms146µs500ns).
+2026-09-16 12:26:45.845  INFO 14016 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-09-16 12:26:45.854  INFO 14016 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2026-09-16 12:26:45.854  INFO 14016 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-16 12:26:45.854  INFO 14016 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2026-09-16 12:26:45.856  INFO 14016 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2026-09-16 12:26:45.858  INFO 14016 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 12:26:45.875  INFO 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-16 12:26:45.884  INFO 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
